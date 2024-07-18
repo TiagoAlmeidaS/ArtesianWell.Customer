@@ -1,11 +1,13 @@
-namespace Customer.Application.Usecases.Customer.Query.GetCustomer;
+using Customer.Domain.SeedWork;
 
-public class GetCustomerResult
+namespace Customer.Domain.Entities;
+
+public class CustomerEntity: AggregateRoot
 {
     public string Id { get; set; }
     public string Name { get; set; }
     public string Email { get; set; }
     public string Phone { get; set; }
-    public int ProfileType { get; set; }
+    public int ProfileTypeId { get; set; }
     public string Document { get; set; }
 }
